@@ -1,0 +1,93 @@
+
+*{
+	margin : 0px;
+	padding : 0px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tester{
+	border : solid 1px;
+}
+.form-header{
+	    padding: 8px;
+		padding-left: 20px;
+}
+.header-text{
+	font-size: 19px;
+    font-weight: 440;
+	
+}
+.header-para-left{
+	padding: 3px;
+    padding-left: 25px;
+    border: solid 0.5px #0000001f;
+    border-radius: 5px;
+}
+.form-label{
+}
+.form-field{
+}
+.sub-heading{
+}
+.sub-heading-para{
+	padding: 1px;
+    padding-left: 16px;
+    padding-top: 9px;
+    border: solid 0.5px #0000001f;
+}
+.subparts{
+	border: solid 1px #0000001f;
+}
+.goal-field-right{
+	margin-left: -16px;
+    width: 115% !important;
+}
+.goal-field-left{
+	width: 115% !important;
+}
+.add-right-border{
+	border-right: solid 0.5px #0000001f;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	
+}
+.form-submit{
+	padding-top : 40px;
+}
+.submitReport{
+	background-color:rgba(0, 137, 255, 0.58)  !important;
+}

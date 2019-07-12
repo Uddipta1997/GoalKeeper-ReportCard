@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Player Performance Card</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,500' rel='stylesheet' type='text/css'>
+	<!-- <link href='custom.css' rel='stylesheet' type='text/css'> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/Reportcard.js"></script>
+	<link href="./css/Reportcard.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- total_Goals
+		total_assists
+		Balls_stripped
+		shots_caught
+s
+Name_of_the_player
+Pace_overall_points
+Strength_overall_points
+Balance_Overall_points
+
+
+
+-->
+<div class="row">
+	<div class="col-lg-6">
+	<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Goalkeeper')">Goalkeeper</button>
+  <button class="tablinks" onclick="openTab(event, 'Defence')">Defence</button>
+  <button class="tablinks" onclick="openTab(event, 'Profile')">Profile</button>
+</div>
+
+
+<div id="Goalkeeper" class="tabcontent">                   <!-----Goalkeeper profile edit here--->
+ <div class="header-para-left row">
+				<span class="header-text">
+					Goalkeeping
+				</span>
+			</div>
+
+			
+				
+				<div class="subparts">
+					<div class="row add-right-border">
+						<div class="col-lg-8">
+							<span class="subpart-heading form-label">Goals conceeded</span>
+						</div>
+						<div class="col-lg-4">
+							<div class="form-field">
+								<input id="Totalgoals" name = "total_Goals" class="form-control" type="text" disabled value="0">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- From Here Edit -->
+				<div class="header-para-left row">
+					
+						<span class="header-text">Goalkeeper Diving</span>
+					
+
+				</div>
+				<div class="subparts">
+					<div class="row add-right-border">
+						<div class="col-lg-8">
+							<span class="subpart-heading form-label">Shots caught/Parried</span>
+						</div>
+						<div class="col-lg-4">
+							<div class="form-field">
+								<input id="shotsCaught" name="shots_caught" class="form-control" type="number" min="0"
+									value="0">
+							</div>
+						</div>
+					</div>
+					<div class="header-para-left row">
+					
+						<span class="header-text">Goalkeeper Handling</span>
+					
+
+				</div>
+					
+					<div class="row add-right-border">
+						<div class="col-lg-8">
+							<span class="subpart-heading form-label">Crosses caught</span>
+						</div>
+						<div class="col-lg-4">
+							<input id="Crossescaught" name="failedPasses" class="form-control" type="number" min="0"
+								value="0">
+						</div>
+					</div>
+					<div class="header-para-left row">
+					
+						<span class="header-text">Goalkeeper Reflexes</span>
+					
+
+				</div>
+					<div class="row add-right-border">
+						<div class="col-lg-8">
+							<span class="subpart-heading form-label">Balls stripped</span>
+						</div>
+						<div class="col-lg-4">
+							<input id="ballsstripped" name="Balls_stripped" class="form-control" type="number" min="0"
+								value="0">
+						</div>
+					</div>
+				</div>
+					
+
+			<!----Defence profile edit here----->
+					
+
+</div>
+
+<div id="Defence" class="tabcontent">
+ <div class="header-para-left row">
+				<span class="header-text">
+					Passes
+				</span>
+				
+			</div>
+			<div class="subparts">
+				<div class="row add-right-border">
+					<div class="col-lg-8">
+						<span class="sub-heading form-label">Assists</span>
+					</div>
+						<div class="col-lg-4">
+							<input id="assists" name="Assists" class="form-control" type="number" min="0"
+								value="0">
+						</div>
+				</div>
+			</div>
+			
+					<div class="row add-right-border">
+						<div class="col-lg-8">
+							<span class="subpart-heading form-label">Completed</span>
+						</div>
+						<div class="col-lg-4">
+							<input id="completedPasses" name="completed_passes" class="form-control" type="number" min="0"
+								value="0">
+						
+					</div>
+					<div class="subparts">
+					<div class="row add-right-border">
+						<div class="col-lg-8">
+							<span class="subpart-heading form-label">Failed Passes</span>
+						</div>
+						<div class="col-lg-4">
+							<input id="failedPasses" name="failed_passes" class="form-control" type="number" min="0"
+								value="0">
+						</div>
+					</div>
+					</div>
+					<div class="subparts">
+					<div class="row add-right-border">
+						<div class="col-lg-8">
+							<span class="subpart-heading form-label">Key Passes</span>
+						</div>
+						<div class="col-lg-4">
+							<input id="keyPasses" name="key_passes" class="form-control" type="number" min="0"
+								value="0">
+						</div>
+					</div>
+					</div>
+			</div>
+			<div class="subparts">
+			<div class="row add-right-border">
+					<div class="col-lg-8">
+						<span class="sub-heading form-label">Crosses successful/failed</span>
+					</div>
+					<div class="col-lg-4">
+						<div class="form-field">
+							<input name="crosses_s/f" id="crossesS/F" class="form-control"
+								type="number"  min="0" value="0">
+						</div>
+					</div>
+			</div>
+			</div>
+			<div class="header-para-left row">
+					
+						<span class="header-text">Positioning</span>
+					
+
+				</div>
+			<div class="subparts">
+				<div class="row add-right-border">
+							<div class="col-lg-8">
+								<span class="subpart-heading form-label">Interceptions / Blocks</span>
+							</div>
+							<div class="col-lg-4">
+								<div class="row add-right-border">
+									<div class="col-lg-6">
+										<input id="interceptions" name="interceptions"
+											class="form-control goal-field-left" type="number" value=0 min="0">
+									</div>
+									<div class="col-lg-6">
+										<input id="blocks" name="blocks"
+											class="form-control goal-field-right" type="number" value=0 min="0">
+									</div>
+								</div>
+							</div>
+				</div>
+				<div class="row add-right-border">
+						<div class="col-lg-8">
+							<span class="subpart-heading form-label">out of Position</span>
+						</div>
+						<div class="col-lg-4">
+							<input id="out_of_position" name="outOfPosition" class="form-control" type="number" min="0"
+								value="0">
+						</div>
+					</div>
+			</div>
+			<div class="header-para-left row">
+					
+						<span class="header-text">Ball Retension</span>
+					
+
+				</div>
+			
+			<div class="subparts">
+					<div class="row add-right-border">
+						<div class="col-lg-8">
+							<span class="subpart-heading form-label">Possesion Won / Lost</span>
+						</div>
+						<div class="col-lg-4">
+							<div class="row add-right-border">
+								<div class="col-lg-6">
+									<input id="possesionWon" name="possesionWon"
+										class="form-control goal-field-left" type="number" value=0 min="0">
+										
+								</div>
+								<div class="col-lg-6">
+									<input id="PossesionLost" name="possesion_lost"
+										class="form-control goal-field-right" type="number" value=0 min="0">
+										
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row add-right-border">
+						<div class="col-lg-8">
+							<span class="subpart-heading form-label">Clearances</span>
+						</div>
+						<div class="col-lg-4">
+							<input id="Clearances" name="clearances" class="form-control" type="number" min="0"
+								value="0">
+						</div>
+					</div>
+					
+			</div>
+			<div class="form-submit">
+				<button type="submit" class="form-control btn disabled submitReport" disabled>Confirm</button>
+			</div>
+			
+			
+</div>
+
+
+<div id="Profile" class="tabcontent">
+	<h3>Profile</h3>
+			
+				<div class="row sub-heading-para">
+					<div class="col-lg-8">
+						<span class="sub-heading form-label">Name</span>
+					</div>
+						<div class="col-lg-4">
+							<div class="form-field">
+								<input id="Nameoftheplayer" name="Name_of_the_player" class="form-control" type="text" placeholder="Name...." >
+							</div>
+						</div>
+				</div>
+			
+			<div class="row sub-heading-para">
+					<div class="col-lg-8">
+						<span class="sub-heading form-label">Pace</span>
+					</div>
+					<div class="col-lg-4">
+						<div class="form-field">
+							<input name="pace_overall_points" id="paceOverallPoints" class="form-control"
+								type="number" step="0.01" min="0" max="5">
+						</div>
+					</div>
+				</div>
+				<div class="row sub-heading-para">
+					<div class="col-lg-8">
+						<span class="sub-heading form-label">Strength</span>
+					</div>
+					<div class="col-lg-4">
+						<div class="form-field">
+							<input name="strength_overall_points" id="strengthOverallPoints" class="form-control"
+								type="number" step="0.01" min="0" max="5">
+						</div>
+					</div>
+				</div>
+				<div class="row sub-heading-para">
+					<div class="col-lg-8">
+						<span class="sub-heading form-label">Balance</span>
+					</div>
+					<div class="col-lg-4">
+						<div class="form-field">
+							<input name="balance_overall_points" id="balanceOverallPoints" class="form-control"
+								type="number" step="0.01" min="0" max="5">
+						</div>
+					</div>
+				</div>
+</div>
+
+
+</body>
+
+</html>
